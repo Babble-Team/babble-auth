@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
     spec.swift_version = '5.0'
 
     spec.dependency 'Firebase', '8.12.1'
-    spec.dependency 'FirebaseAuth'
     spec.dependency 'GoogleSignIn', '6.1.0'
     
     spec.source_files = 'AuthSDK/sdk/Sources/**/*.{*.swift,swift}'
