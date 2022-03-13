@@ -6,6 +6,7 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://github.com/Babble-Team/babble-auth"
     spec.authors      = { 'Krzysztof Łowiec' => 'cph.lowiec@gmail.com', 'Kornelia Bisewska' => 'bisewskakornelia@gmail.com' }
     spec.summary      = "Babble Auth SDK"
+    spec.source       = { :git => 'git@github.com:Babble-Team/babble-auth.git', :tag => spec.version.to_s  }
 
     spec.ios.deployment_target = '13.0'
     spec.swift_version = '5.0'
