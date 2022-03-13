@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AuthProvider {
+public enum AuthProvider {
     
     case google
     

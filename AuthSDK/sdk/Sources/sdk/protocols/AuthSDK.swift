@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol AuthSDK {
+public protocol AuthSDK {
     
     func signIn(with provider: AuthProvider, completion: @escaping Completion)
     func signOut(with provider: AuthProvider, completion: @escaping Completion)

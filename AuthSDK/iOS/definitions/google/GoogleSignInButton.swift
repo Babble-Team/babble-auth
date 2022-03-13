@@ -40,7 +40,7 @@ public final class GoogleSignInButton: GIDSignInButton {
     // MARK: - Methods
     
     @objc private func onTapGesture(_ sender: UIControl) {
-        AuthSDKImpl().signIn(
+        AuthSDKImpl.shared.signIn(
             with: .google,
             completion: completion
         )

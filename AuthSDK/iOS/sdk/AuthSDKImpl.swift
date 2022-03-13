@@ -11,6 +11,8 @@ public typealias Completion = (Result<AuthState, AuthSDKError>) -> Void
 
 public final class AuthSDKImpl: AuthSDK {
     
+    public static let shared: AuthSDK = AuthSDKImpl()
+    
     // MARK: - Stored Properties
     
     private let googleAuthService: GoogleAuthService
@@ -18,7 +20,7 @@ public final class AuthSDKImpl: AuthSDK {
     
     // MARK: - Initialization
     
-    init() {
+    private init() {
         googleAuthService = GoogleAuthServiceImpl()
     }
     
@@ -38,7 +40,7 @@ extension AuthSDKImpl {
     /// Sign in the user with choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    func signIn(
+    public func signIn(
         with provider: AuthProvider,
         completion: @escaping Completion
     ) {
@@ -51,7 +53,7 @@ extension AuthSDKImpl {
     /// Sign out the user for choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    func signOut(
+    public func signOut(
         with provider: AuthProvider,
         completion: @escaping Completion
     ) {
@@ -64,7 +66,7 @@ extension AuthSDKImpl {
     /// Restore recent sign in state for choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    func restoreSignInState(
+    public func restoreSignInState(
         with provider: AuthProvider,
         completion: @escaping Completion
     ) {
