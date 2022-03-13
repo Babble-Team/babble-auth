@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
     
     spec.source_files = 'AuthSDK/**/*.{swift}'
     
-    spec.test_spec AuthSDKTests' do |test_spec|
-        test_spec.source_files = 'AuthSDKTests/**/*.{swift}'
+    spec.test_spec 'AuthSDKTests' do |test_spec|
+        test_spec.source_files = 'AuthSDKTests/**/*.swift'
         test_spec.dependency 'Nimble', '9.2.0'
         test_spec.frameworks = 'XCTest'
     end
