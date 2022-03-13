@@ -6,15 +6,17 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://github.com/Babble-Team/babble-auth"
     spec.authors      = { 'Krzysztof Łowiec' => 'cph.lowiec@gmail.com', 'Kornelia Bisewska' => 'bisewskakornelia@gmail.com' }
     spec.summary      = "Babble Auth SDK"
-    spec.source       = { :git => 'git@github.com:Babble-Team/babble-auth.git', :tag => spec.version.to_s  }
+    spec.source       = { :git => 'git@github.com:Babble-Team/babble-auth.git', :tag => "#{spec.version}"  }
+    spec.requires_arc = true
 
     spec.ios.deployment_target = '13.0'
     spec.swift_version = '5.0'
 
     spec.dependency 'Firebase'
+    spec.dependency 'FirebaseAuth'
     spec.dependency 'GoogleSignIn'
     
-    spec.source_files = 'AuthSDK/sdk/Sources/**/*.{*.swift,swift}'
+    spec.source_files = 'AuthSDK/**/*.{swift}'
 
     spec.test_spec 'AuthSDKTests' do |test_spec|
         test_spec.frameworks = 'XCTest'
