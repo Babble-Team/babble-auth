@@ -13,10 +13,18 @@ Pod::Spec.new do |spec|
     spec.swift_version = '5.0'
 
     spec.dependency 'Firebase'
-    # spec.dependency 'FirebaseAuth'
-    # spec.dependency 'GoogleSignIn'
+    spec.dependency 'FirebaseAuth'
+    spec.dependency 'GoogleSignIn'
 
-    spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/AuthSDK/Firebase $(PODS_TARGET_SRCROOT)/AuthSDK/Firebase' }
+    spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '
+        $(PODS_ROOT)/AuthSDK/Firebase 
+        $(PODS_ROOT)/AuthSDK/FirebaseAuth 
+        $(PODS_ROOT)/AuthSDK/GoogleSignIn 
+
+        $(PODS_TARGET_SRCROOT)/AuthSDK/Firebase
+        $(PODS_TARGET_SRCROOT)/AuthSDK/FirebaseAuth
+        $(PODS_TARGET_SRCROOT)/AuthSDK/GoogleSignIn'
+    }
     
     spec.source_files = 'AuthSDK/**/*.{swift}'
 
