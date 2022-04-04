@@ -9,11 +9,12 @@ import Foundation
 import GoogleSignIn
 import FirebaseCore
 import FirebaseAuth
+import Combine
 
 protocol GoogleAuthService {
     
-    func requestSignInFlow(completion: @escaping Completion)
-    func restoreSignInState(completion: @escaping Completion)
+    func showGoogleSignInView() -> CompletionPublisher
+    func restoreSignInState() -> CompletionPublisher
     func signOut()
     
     func isURLRequestHandled(for url: URL) -> Bool
@@ -30,35 +31,42 @@ final class GoogleAuthServiceImpl: GoogleAuthService {
     
     // MARK: - Methods
     
-    func requestSignInFlow(completion: @escaping Completion) {
+    func showGoogleSignInView() -> CompletionPublisher {
         guard let clientID = FirebaseApp.app()?.options.clientID else {
-            completion(.failure(.unableToRetrieveFirebaseClientID))
-            return
+            return Fail(error: .unableToRetrieveFirebaseClientID)
+                .eraseToAnyPublisher()
         }
         
         let configuration = GIDConfiguration(clientID: clientID)
         guard let topViewController = UIApplication.shared.windows.last?.rootViewController else {
-            completion(.failure(.unableToFindRootViewController))
-            return
+            return Fail(error: .unableToFindRootViewController)
+                .eraseToAnyPublisher()
         }
         
-        GIDSignIn.sharedInstance.signIn(
-            with: configuration,
-            presenting: topViewController
-        ) { (user, error) in
-            guard
-                error == nil,
-                let authUser = user
-            else {
-                completion(.failure(.unableToAuthenticate))
-                return
+        return Future<AuthState, AuthSDKError> { promise in
+            GIDSignIn.sharedInstance.signIn(
+                with: configuration,
+                presenting: topViewController
+            ) { (user, error) in
+                guard
+                    error == nil,
+                    let authUser = user
+                else {
+                    promise(.failure(.unableToAuthenticate))
+                    return
+                }
+                
+                self.authenticateWithFirebase(forUser: authUser) {
+                    switch $0 {
+                    case let .success(state):
+                        promise(.success(state))
+                    case let .failure(error):
+                        promise(.failure(error))
+                    }
+                }
             }
-            
-            self.authenticateWithFirebase(
-                forUser: authUser,
-                completion: completion
-            )
         }
+        .eraseToAnyPublisher()
     }
     
     func isURLRequestHandled(for url: URL) -> Bool {
@@ -66,10 +74,17 @@ final class GoogleAuthServiceImpl: GoogleAuthService {
         return handled
     }
     
-    func restoreSignInState(completion: @escaping Completion) {
-        GIDSignIn.sharedInstance.restorePreviousSignIn { (user, error) in
-            completion(.success((error != nil || user == nil) ? .notAuthorized : .authorized))
+    func restoreSignInState() -> CompletionPublisher {
+        return Future<AuthState, AuthSDKError> { promise in
+            GIDSignIn.sharedInstance.restorePreviousSignIn { (user, error) in
+                if (error != nil || user == nil) {
+                    promise(.success(.notAuthorized))
+                } else {
+                    promise(.success(.authorized))
+                }
+            }
         }
+        .eraseToAnyPublisher()
     }
     
     func signOut() {
@@ -78,7 +93,7 @@ final class GoogleAuthServiceImpl: GoogleAuthService {
     
     private func authenticateWithFirebase(
         forUser user: GIDGoogleUser,
-        completion: @escaping Completion
+        completion: @escaping (Result<AuthState, AuthSDKError>) -> Void
     ) {
         guard let idToken = user.authentication.idToken else {
             completion(.failure(.unableToRetrieveIdToken))

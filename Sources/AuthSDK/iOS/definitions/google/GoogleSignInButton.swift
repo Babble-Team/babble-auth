@@ -6,20 +6,23 @@
 //
 
 import GoogleSignIn
+import Combine
 
 public final class GoogleSignInButton: GIDSignInButton {
     
     // MARK: - Stored Properties
     
-    private let completion: Completion
+    private let onFinish: (AuthState) -> Void
+    
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Initialization
 
     public init(
         size: CGSize,
-        completion: @escaping Completion
+        onFinish: @escaping (AuthState) -> Void
     ) {
-        self.completion = completion
+        self.onFinish = onFinish
         
         super.init(frame: CGRect(
             origin: .zero,
@@ -40,10 +43,18 @@ public final class GoogleSignInButton: GIDSignInButton {
     // MARK: - Methods
     
     @objc private func onTapGesture(_ sender: UIControl) {
-        AuthSDKImpl.shared.signIn(
-            with: .google,
-            completion: completion
-        )
+        AuthSDKImpl.shared.signIn(with: .google)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished: return
+                case let .failure(error):
+                    debugPrint("GoogleSignInButton: Error \(error.localizedDescription)")
+                }
+            } receiveValue: { [weak self] in
+                self?.onFinish($0)
+            }
+            .store(in: &cancellables)
     }
 
 }

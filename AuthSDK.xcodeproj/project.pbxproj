@@ -3,726 +3,730 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"authsdk::AuthSDKPackageTests::ProductTarget" /* AuthSDKPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXAggregateTarget "AuthSDKPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_65 /* PBXTargetDependency */,
+			);
+			name = AuthSDKPackageTests;
+			productName = AuthSDKPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		70851D06E02A8A0EF72DE3F8 /* Pods_AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9425E5D857B44A14836EEB8 /* Pods_AuthSDK.framework */; };
-		B82A474A27DCBFFD004C65FD /* AuthSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = B82A474927DCBFFD004C65FD /* AuthSDK.docc */; };
-		B82A475027DCBFFD004C65FD /* AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82A474527DCBFFD004C65FD /* AuthSDK.framework */; };
-		B82A475527DCBFFD004C65FD /* AuthSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A475427DCBFFD004C65FD /* AuthSDKTests.swift */; };
-		B82A475627DCBFFD004C65FD /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B82A474827DCBFFD004C65FD /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B82A476B27DCC5A0004C65FD /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A476A27DCC5A0004C65FD /* GoogleAuthService.swift */; };
-		B82A476E27DCC676004C65FD /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A476D27DCC676004C65FD /* AuthState.swift */; };
-		B82A477127DCC6AA004C65FD /* AuthSDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A477027DCC6AA004C65FD /* AuthSDKError.swift */; };
-		B82A477327DCD6F7004C65FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A477227DCD6F7004C65FD /* User.swift */; };
-		B82A477627DCF6E3004C65FD /* AuthSDKImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A477527DCF6E3004C65FD /* AuthSDKImpl.swift */; };
-		B87430F727DCFD82004BFDD7 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87430F627DCFD82004BFDD7 /* GoogleSignInButton.swift */; };
-		B87430FB27DCFDC0004BFDD7 /* AuthSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87430FA27DCFDC0004BFDD7 /* AuthSDK.swift */; };
-		B87430FD27DCFE83004BFDD7 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87430FC27DCFE83004BFDD7 /* AuthProvider.swift */; };
-		FD9227993E608A36584CF2F8 /* Pods_AuthSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1955FF24211AF557BBA8AA89 /* Pods_AuthSDKTests.framework */; };
+		B85A77D427FB21DC00E4C6E8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D327FB21DC00E4C6E8 /* FirebaseAnalytics */; };
+		B85A77D627FB21DC00E4C6E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D527FB21DC00E4C6E8 /* FirebaseAuth */; };
+		B85A77D827FB21DC00E4C6E8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D727FB21DC00E4C6E8 /* FirebaseCrashlytics */; };
+		B85A77DA27FB21DC00E4C6E8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D927FB21DC00E4C6E8 /* FirebaseDatabase */; };
+		B85A77DD27FB220600E4C6E8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77DC27FB220600E4C6E8 /* GoogleSignIn */; };
+		OBJ_46 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* GoogleSignInButton.swift */; };
+		OBJ_47 /* AuthSDKImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* AuthSDKImpl.swift */; };
+		OBJ_48 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AuthProvider.swift */; };
+		OBJ_49 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* AuthState.swift */; };
+		OBJ_50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* User.swift */; };
+		OBJ_51 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GoogleAuthService.swift */; };
+		OBJ_52 /* AuthSDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* AuthSDKError.swift */; };
+		OBJ_53 /* AuthSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* AuthSDK.swift */; };
+		OBJ_60 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_71 /* AuthSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* AuthSDKTests.swift */; };
+		OBJ_73 /* AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "authsdk::AuthSDK::Product" /* AuthSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B82A475127DCBFFD004C65FD /* PBXContainerItemProxy */ = {
+		B85A77D027FB210700E4C6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B82A473C27DCBFFD004C65FD /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B82A474427DCBFFD004C65FD;
-			remoteInfo = "bubble auth";
+			remoteGlobalIDString = "authsdk::AuthSDK";
+			remoteInfo = AuthSDK;
+		};
+		B85A77D127FB210700E4C6E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "authsdk::AuthSDKTests";
+			remoteInfo = AuthSDKTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04F2D63665497E714CBDA94B /* Pods-bubble auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble auth.debug.xcconfig"; path = "Target Support Files/Pods-bubble auth/Pods-bubble auth.debug.xcconfig"; sourceTree = "<group>"; };
-		08B9167EAE20650110F5C056 /* Pods-bubble authTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble authTests.debug.xcconfig"; path = "Target Support Files/Pods-bubble authTests/Pods-bubble authTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0B31BBCA9B0BD56160B671A9 /* Pods-bubble auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble auth.release.xcconfig"; path = "Target Support Files/Pods-bubble auth/Pods-bubble auth.release.xcconfig"; sourceTree = "<group>"; };
-		1955FF24211AF557BBA8AA89 /* Pods_AuthSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FEB31B117AB494040468185 /* Pods-AuthSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSDK.debug.xcconfig"; path = "Target Support Files/Pods-AuthSDK/Pods-AuthSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		721F4F595BA102B85DC854E7 /* Pods-bubble authTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble authTests.release.xcconfig"; path = "Target Support Files/Pods-bubble authTests/Pods-bubble authTests.release.xcconfig"; sourceTree = "<group>"; };
-		9CD14CE0C12264B4DD6605F1 /* Pods-AuthSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthSDKTests/Pods-AuthSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B82A474527DCBFFD004C65FD /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B82A474827DCBFFD004C65FD /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
-		B82A474927DCBFFD004C65FD /* AuthSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthSDK.docc; sourceTree = "<group>"; };
-		B82A474F27DCBFFD004C65FD /* AuthSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B82A475427DCBFFD004C65FD /* AuthSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKTests.swift; sourceTree = "<group>"; };
-		B82A476A27DCC5A0004C65FD /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
-		B82A476D27DCC676004C65FD /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
-		B82A477027DCC6AA004C65FD /* AuthSDKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKError.swift; sourceTree = "<group>"; };
-		B82A477227DCD6F7004C65FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B82A477527DCF6E3004C65FD /* AuthSDKImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKImpl.swift; sourceTree = "<group>"; };
-		B87430F627DCFD82004BFDD7 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
-		B87430FA27DCFDC0004BFDD7 /* AuthSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDK.swift; sourceTree = "<group>"; };
-		B87430FC27DCFE83004BFDD7 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
-		C4716CDEE6B87D04A98EEEE5 /* Pods-AuthSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSDK.release.xcconfig"; path = "Target Support Files/Pods-AuthSDK/Pods-AuthSDK.release.xcconfig"; sourceTree = "<group>"; };
-		D0097FFF25A589F019CFD0A9 /* Pods-AuthSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AuthSDKTests/Pods-AuthSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		D9425E5D857B44A14836EEB8 /* Pods_AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_13 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		OBJ_15 /* AuthSDKImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKImpl.swift; sourceTree = "<group>"; };
+		OBJ_21 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		OBJ_22 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		OBJ_24 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		OBJ_27 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		OBJ_29 /* AuthSDKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKError.swift; sourceTree = "<group>"; };
+		OBJ_31 /* AuthSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDK.swift; sourceTree = "<group>"; };
+		OBJ_34 /* AuthSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_40 /* AuthSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthSDK.podspec; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
+		"authsdk::AuthSDK::Product" /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"authsdk::AuthSDKTests::Product" /* AuthSDKTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AuthSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B82A474227DCBFFD004C65FD /* Frameworks */ = {
+		OBJ_54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				70851D06E02A8A0EF72DE3F8 /* Pods_AuthSDK.framework in Frameworks */,
+				B85A77DD27FB220600E4C6E8 /* GoogleSignIn in Frameworks */,
+				B85A77D827FB21DC00E4C6E8 /* FirebaseCrashlytics in Frameworks */,
+				B85A77D427FB21DC00E4C6E8 /* FirebaseAnalytics in Frameworks */,
+				B85A77DA27FB21DC00E4C6E8 /* FirebaseDatabase in Frameworks */,
+				B85A77D627FB21DC00E4C6E8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B82A474C27DCBFFD004C65FD /* Frameworks */ = {
+		OBJ_72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B82A475027DCBFFD004C65FD /* AuthSDK.framework in Frameworks */,
-				FD9227993E608A36584CF2F8 /* Pods_AuthSDKTests.framework in Frameworks */,
+				OBJ_73 /* AuthSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82A8B9EFA6BA2414D3B13340 /* Frameworks */ = {
+		OBJ_10 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D9425E5D857B44A14836EEB8 /* Pods_AuthSDK.framework */,
-				1955FF24211AF557BBA8AA89 /* Pods_AuthSDKTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B3611B0382A5C20B2E459FE4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				04F2D63665497E714CBDA94B /* Pods-bubble auth.debug.xcconfig */,
-				0B31BBCA9B0BD56160B671A9 /* Pods-bubble auth.release.xcconfig */,
-				08B9167EAE20650110F5C056 /* Pods-bubble authTests.debug.xcconfig */,
-				721F4F595BA102B85DC854E7 /* Pods-bubble authTests.release.xcconfig */,
-				6FEB31B117AB494040468185 /* Pods-AuthSDK.debug.xcconfig */,
-				C4716CDEE6B87D04A98EEEE5 /* Pods-AuthSDK.release.xcconfig */,
-				9CD14CE0C12264B4DD6605F1 /* Pods-AuthSDKTests.debug.xcconfig */,
-				D0097FFF25A589F019CFD0A9 /* Pods-AuthSDKTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		B82A473B27DCBFFD004C65FD = {
-			isa = PBXGroup;
-			children = (
-				B82A474727DCBFFD004C65FD /* AuthSDK */,
-				B82A475327DCBFFD004C65FD /* AuthSDKTests */,
-				B82A474627DCBFFD004C65FD /* Products */,
-				B3611B0382A5C20B2E459FE4 /* Pods */,
-				82A8B9EFA6BA2414D3B13340 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B82A474627DCBFFD004C65FD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B82A474527DCBFFD004C65FD /* AuthSDK.framework */,
-				B82A474F27DCBFFD004C65FD /* AuthSDKTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B82A474727DCBFFD004C65FD /* AuthSDK */ = {
-			isa = PBXGroup;
-			children = (
-				B87430F327DCFD41004BFDD7 /* iOS */,
-				B82A475F27DCC0CB004C65FD /* sdk */,
-				B82A474827DCBFFD004C65FD /* AuthSDK.h */,
-				B82A474927DCBFFD004C65FD /* AuthSDK.docc */,
-			);
-			path = AuthSDK;
-			sourceTree = "<group>";
-		};
-		B82A475327DCBFFD004C65FD /* AuthSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				B82A475427DCBFFD004C65FD /* AuthSDKTests.swift */,
-			);
-			path = AuthSDKTests;
-			sourceTree = "<group>";
-		};
-		B82A475F27DCC0CB004C65FD /* sdk */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476027DCC105004C65FD /* Sources */,
-			);
-			path = sdk;
-			sourceTree = "<group>";
-		};
-		B82A476027DCC105004C65FD /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476227DCC221004C65FD /* sdk */,
-				B82A476127DCC213004C65FD /* definition */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		B82A476127DCC213004C65FD /* definition */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476627DCC292004C65FD /* objects */,
-				B82A476327DCC240004C65FD /* service */,
-			);
-			path = definition;
-			sourceTree = "<group>";
-		};
-		B82A476227DCC221004C65FD /* sdk */ = {
-			isa = PBXGroup;
-			children = (
-				B82A477027DCC6AA004C65FD /* AuthSDKError.swift */,
-				B87430F927DCFDB5004BFDD7 /* protocols */,
-				B82A476527DCC25A004C65FD /* extensions */,
-			);
-			path = sdk;
-			sourceTree = "<group>";
-		};
-		B82A476327DCC240004C65FD /* service */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476927DCC590004C65FD /* google */,
-			);
-			path = service;
-			sourceTree = "<group>";
-		};
-		B82A476527DCC25A004C65FD /* extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = extensions;
-			sourceTree = "<group>";
-		};
-		B82A476627DCC292004C65FD /* objects */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476C27DCC66C004C65FD /* enums */,
-				B82A476827DCC4F3004C65FD /* models */,
-			);
-			path = objects;
-			sourceTree = "<group>";
-		};
-		B82A476827DCC4F3004C65FD /* models */ = {
-			isa = PBXGroup;
-			children = (
-				B82A477227DCD6F7004C65FD /* User.swift */,
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		B82A476927DCC590004C65FD /* google */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476A27DCC5A0004C65FD /* GoogleAuthService.swift */,
-			);
-			path = google;
-			sourceTree = "<group>";
-		};
-		B82A476C27DCC66C004C65FD /* enums */ = {
-			isa = PBXGroup;
-			children = (
-				B82A476D27DCC676004C65FD /* AuthState.swift */,
-				B87430FC27DCFE83004BFDD7 /* AuthProvider.swift */,
-			);
-			path = enums;
-			sourceTree = "<group>";
-		};
-		B87430F327DCFD41004BFDD7 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B87430F827DCFD90004BFDD7 /* sdk */,
-				B87430F427DCFD4C004BFDD7 /* definitions */,
+				OBJ_11 /* definitions */,
+				OBJ_14 /* sdk */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		B87430F427DCFD4C004BFDD7 /* definitions */ = {
+		OBJ_11 /* definitions */ = {
 			isa = PBXGroup;
 			children = (
-				B87430F527DCFD57004BFDD7 /* google */,
+				OBJ_12 /* google */,
 			);
 			path = definitions;
 			sourceTree = "<group>";
 		};
-		B87430F527DCFD57004BFDD7 /* google */ = {
+		OBJ_12 /* google */ = {
 			isa = PBXGroup;
 			children = (
-				B87430F627DCFD82004BFDD7 /* GoogleSignInButton.swift */,
+				OBJ_13 /* GoogleSignInButton.swift */,
 			);
 			path = google;
 			sourceTree = "<group>";
 		};
-		B87430F827DCFD90004BFDD7 /* sdk */ = {
+		OBJ_14 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				B82A477527DCF6E3004C65FD /* AuthSDKImpl.swift */,
+				OBJ_15 /* AuthSDKImpl.swift */,
 			);
 			path = sdk;
 			sourceTree = "<group>";
 		};
-		B87430F927DCFDB5004BFDD7 /* protocols */ = {
+		OBJ_16 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				B87430FA27DCFDC0004BFDD7 /* AuthSDK.swift */,
+				OBJ_17 /* Sources */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* definition */,
+				OBJ_28 /* sdk */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* definition */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* objects */,
+				OBJ_25 /* service */,
+			);
+			path = definition;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* enums */,
+				OBJ_23 /* models */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* AuthProvider.swift */,
+				OBJ_22 /* AuthState.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* google */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		OBJ_26 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* GoogleAuthService.swift */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		OBJ_28 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* AuthSDKError.swift */,
+				OBJ_30 /* protocols */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		OBJ_30 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* AuthSDK.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		OBJ_32 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* AuthSDKTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_33 /* AuthSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* AuthSDKTests.swift */,
+			);
+			name = AuthSDKTests;
+			path = Tests/AuthSDKTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"authsdk::AuthSDK::Product" /* AuthSDK.framework */,
+				"authsdk::AuthSDKTests::Product" /* AuthSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_32 /* Tests */,
+				OBJ_35 /* Products */,
+				OBJ_38 /* LICENSE */,
+				OBJ_39 /* README.md */,
+				OBJ_40 /* AuthSDK.podspec */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AuthSDK */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AuthSDK */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AuthSDK.h */,
+				OBJ_10 /* iOS */,
+				OBJ_16 /* sdk */,
+			);
+			name = AuthSDK;
+			path = Sources/AuthSDK;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B82A474027DCBFFD004C65FD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B82A475627DCBFFD004C65FD /* AuthSDK.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		B82A474427DCBFFD004C65FD /* AuthSDK */ = {
+		"authsdk::AuthSDK" /* AuthSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B82A475927DCBFFD004C65FD /* Build configuration list for PBXNativeTarget "AuthSDK" */;
+			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "AuthSDK" */;
 			buildPhases = (
-				F0B5EC5547C46F79D31F6E28 /* [CP] Check Pods Manifest.lock */,
-				B82A474027DCBFFD004C65FD /* Headers */,
-				B82A474127DCBFFD004C65FD /* Sources */,
-				B82A474227DCBFFD004C65FD /* Frameworks */,
-				B82A474327DCBFFD004C65FD /* Resources */,
+				OBJ_45 /* Sources */,
+				OBJ_54 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AuthSDK;
-			productName = "bubble auth";
-			productReference = B82A474527DCBFFD004C65FD /* AuthSDK.framework */;
+			packageProductDependencies = (
+				B85A77D327FB21DC00E4C6E8 /* FirebaseAnalytics */,
+				B85A77D527FB21DC00E4C6E8 /* FirebaseAuth */,
+				B85A77D727FB21DC00E4C6E8 /* FirebaseCrashlytics */,
+				B85A77D927FB21DC00E4C6E8 /* FirebaseDatabase */,
+				B85A77DC27FB220600E4C6E8 /* GoogleSignIn */,
+			);
+			productName = AuthSDK;
+			productReference = "authsdk::AuthSDK::Product" /* AuthSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B82A474E27DCBFFD004C65FD /* AuthSDKTests */ = {
+		"authsdk::AuthSDKTests" /* AuthSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B82A475C27DCBFFD004C65FD /* Build configuration list for PBXNativeTarget "AuthSDKTests" */;
+			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "AuthSDKTests" */;
 			buildPhases = (
-				CC33F13B29951631F32941E3 /* [CP] Check Pods Manifest.lock */,
-				B82A474B27DCBFFD004C65FD /* Sources */,
-				B82A474C27DCBFFD004C65FD /* Frameworks */,
-				B82A474D27DCBFFD004C65FD /* Resources */,
-				8A93D0F02BEB33CC8A839861 /* [CP] Embed Pods Frameworks */,
+				OBJ_70 /* Sources */,
+				OBJ_72 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B82A475227DCBFFD004C65FD /* PBXTargetDependency */,
+				OBJ_74 /* PBXTargetDependency */,
 			);
 			name = AuthSDKTests;
-			productName = "bubble authTests";
-			productReference = B82A474F27DCBFFD004C65FD /* AuthSDKTests.xctest */;
+			productName = AuthSDKTests;
+			productReference = "authsdk::AuthSDKTests::Product" /* AuthSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"authsdk::SwiftPMPackageDescription" /* AuthSDKPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "AuthSDKPackageDescription" */;
+			buildPhases = (
+				OBJ_59 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthSDKPackageDescription;
+			productName = AuthSDKPackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B82A473C27DCBFFD004C65FD /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
-				TargetAttributes = {
-					B82A474427DCBFFD004C65FD = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					B82A474E27DCBFFD004C65FD = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = B82A473F27DCBFFD004C65FD /* Build configuration list for PBXProject "AuthSDK" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AuthSDK" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = B82A473B27DCBFFD004C65FD;
-			productRefGroup = B82A474627DCBFFD004C65FD /* Products */;
+			mainGroup = OBJ_5;
+			packageReferences = (
+				B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B85A77DB27FB220600E4C6E8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = OBJ_35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B82A474427DCBFFD004C65FD /* AuthSDK */,
-				B82A474E27DCBFFD004C65FD /* AuthSDKTests */,
+				"authsdk::AuthSDK" /* AuthSDK */,
+				"authsdk::SwiftPMPackageDescription" /* AuthSDKPackageDescription */,
+				"authsdk::AuthSDKPackageTests::ProductTarget" /* AuthSDKPackageTests */,
+				"authsdk::AuthSDKTests" /* AuthSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		B82A474327DCBFFD004C65FD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B82A474D27DCBFFD004C65FD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8A93D0F02BEB33CC8A839861 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthSDKTests/Pods-AuthSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthSDKTests/Pods-AuthSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthSDKTests/Pods-AuthSDKTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC33F13B29951631F32941E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AuthSDKTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0B5EC5547C46F79D31F6E28 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AuthSDK-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		B82A474127DCBFFD004C65FD /* Sources */ = {
+		OBJ_45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B82A476B27DCC5A0004C65FD /* GoogleAuthService.swift in Sources */,
-				B82A476E27DCC676004C65FD /* AuthState.swift in Sources */,
-				B82A477627DCF6E3004C65FD /* AuthSDKImpl.swift in Sources */,
-				B82A477127DCC6AA004C65FD /* AuthSDKError.swift in Sources */,
-				B87430FB27DCFDC0004BFDD7 /* AuthSDK.swift in Sources */,
-				B82A477327DCD6F7004C65FD /* User.swift in Sources */,
-				B87430FD27DCFE83004BFDD7 /* AuthProvider.swift in Sources */,
-				B82A474A27DCBFFD004C65FD /* AuthSDK.docc in Sources */,
-				B87430F727DCFD82004BFDD7 /* GoogleSignInButton.swift in Sources */,
+				OBJ_46 /* GoogleSignInButton.swift in Sources */,
+				OBJ_47 /* AuthSDKImpl.swift in Sources */,
+				OBJ_48 /* AuthProvider.swift in Sources */,
+				OBJ_49 /* AuthState.swift in Sources */,
+				OBJ_50 /* User.swift in Sources */,
+				OBJ_51 /* GoogleAuthService.swift in Sources */,
+				OBJ_52 /* AuthSDKError.swift in Sources */,
+				OBJ_53 /* AuthSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B82A474B27DCBFFD004C65FD /* Sources */ = {
+		OBJ_59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B82A475527DCBFFD004C65FD /* AuthSDKTests.swift in Sources */,
+				OBJ_60 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_71 /* AuthSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B82A475227DCBFFD004C65FD /* PBXTargetDependency */ = {
+		OBJ_65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B82A474427DCBFFD004C65FD /* AuthSDK */;
-			targetProxy = B82A475127DCBFFD004C65FD /* PBXContainerItemProxy */;
+			target = "authsdk::AuthSDKTests" /* AuthSDKTests */;
+			targetProxy = B85A77D127FB210700E4C6E8 /* PBXContainerItemProxy */;
+		};
+		OBJ_74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "authsdk::AuthSDK" /* AuthSDK */;
+			targetProxy = B85A77D027FB210700E4C6E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B82A475727DCBFFD004C65FD /* Debug */ = {
+		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		B82A475827DCBFFD004C65FD /* Release */ = {
+		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		B82A475A27DCBFFD004C65FD /* Debug */ = {
+		OBJ_43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FEB31B117AB494040468185 /* Pods-AuthSDK.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AuthSDK.xcodeproj/AuthSDK_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.bubble-auth";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AuthSDK;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = AuthSDK;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		B82A475B27DCBFFD004C65FD /* Release */ = {
+		OBJ_44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4716CDEE6B87D04A98EEEE5 /* Pods-AuthSDK.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AuthSDK.xcodeproj/AuthSDK_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.bubble-auth";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AuthSDK;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = AuthSDK;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		B82A475D27DCBFFD004C65FD /* Debug */ = {
+		OBJ_57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CD14CE0C12264B4DD6605F1 /* Pods-AuthSDKTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.bubble-authTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B82A475E27DCBFFD004C65FD /* Release */ = {
+		OBJ_58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0097FFF25A589F019CFD0A9 /* Pods-AuthSDKTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.bubble-authTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		OBJ_63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AuthSDK.xcodeproj/AuthSDKTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AuthSDKTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AuthSDK.xcodeproj/AuthSDKTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AuthSDKTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B82A473F27DCBFFD004C65FD /* Build configuration list for PBXProject "AuthSDK" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B82A475727DCBFFD004C65FD /* Debug */,
-				B82A475827DCBFFD004C65FD /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B82A475927DCBFFD004C65FD /* Build configuration list for PBXNativeTarget "AuthSDK" */ = {
+		OBJ_42 /* Build configuration list for PBXNativeTarget "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B82A475A27DCBFFD004C65FD /* Debug */,
-				B82A475B27DCBFFD004C65FD /* Release */,
+				OBJ_43 /* Debug */,
+				OBJ_44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B82A475C27DCBFFD004C65FD /* Build configuration list for PBXNativeTarget "AuthSDKTests" */ = {
+		OBJ_56 /* Build configuration list for PBXNativeTarget "AuthSDKPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B82A475D27DCBFFD004C65FD /* Debug */,
-				B82A475E27DCBFFD004C65FD /* Release */,
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_62 /* Build configuration list for PBXAggregateTarget "AuthSDKPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_67 /* Build configuration list for PBXNativeTarget "AuthSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_68 /* Debug */,
+				OBJ_69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		B85A77DB27FB220600E4C6E8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B85A77D327FB21DC00E4C6E8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B85A77D527FB21DC00E4C6E8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B85A77D727FB21DC00E4C6E8 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		B85A77D927FB21DC00E4C6E8 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85A77D227FB21DC00E4C6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B85A77DC27FB220600E4C6E8 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85A77DB27FB220600E4C6E8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B82A473C27DCBFFD004C65FD /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

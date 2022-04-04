@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Combine
 
-public typealias Completion = (Result<AuthState, AuthSDKError>) -> Void
+public typealias CompletionPublisher = AnyPublisher<AuthState, AuthSDKError>
 
 public final class AuthSDKImpl: AuthSDK {
     
@@ -40,39 +41,30 @@ extension AuthSDKImpl {
     /// Sign in the user with choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    public func signIn(
-        with provider: AuthProvider,
-        completion: @escaping Completion
-    ) {
+    public func signIn(with provider: AuthProvider) -> CompletionPublisher {
         switch provider {
         case .google:
-            googleAuthService.requestSignInFlow(completion: completion)
+            return googleAuthService.showGoogleSignInView()
         }
     }
     
     /// Sign out the user for choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    public func signOut(
-        with provider: AuthProvider,
-        completion: @escaping Completion
-    ) {
+    public func signOut(with provider: AuthProvider) {
         switch provider {
         case .google:
-            googleAuthService.signOut()
+            return googleAuthService.signOut()
         }
     }
     
     /// Restore recent sign in state for choosen auth provider.
     /// - Parameters:
     ///    - provider: The authorization provider. For the available providers, see `AuthProvider`.
-    public func restoreSignInState(
-        with provider: AuthProvider,
-        completion: @escaping Completion
-    ) {
+    public func restoreSignInState(with provider: AuthProvider) -> CompletionPublisher {
         switch provider {
         case .google:
-            googleAuthService.restoreSignInState(completion: completion)
+            return googleAuthService.restoreSignInState()
         }
     }
     
