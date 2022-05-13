@@ -107,7 +107,7 @@ final class GoogleAuthServiceImpl: GoogleAuthService {
         
         Auth.auth().signIn(with: credential) { (authResult, error) in
             guard let uID = authResult?.user.uid else {
-                completion(.failure(.unableToAthenticateWithThisMethod))
+                completion(.failure(.unableToAuthenticateWithThisMethod))
                 return
             }
             

@@ -14,7 +14,7 @@ public enum AuthSDKError: Error {
     case unableToRetrieveIdToken
     
     case unableToAuthenticate
-    case unableToAthenticateWithThisMethod
+    case unableToAuthenticateWithThisMethod
     case unableToAuthorize
     
 }

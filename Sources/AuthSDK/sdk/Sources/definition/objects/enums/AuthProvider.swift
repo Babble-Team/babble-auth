@@ -10,5 +10,6 @@ import Foundation
 public enum AuthProvider {
     
     case google
+    case apple
     
 }

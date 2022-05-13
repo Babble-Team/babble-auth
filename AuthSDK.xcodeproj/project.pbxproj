@@ -26,6 +26,8 @@
 		B85A77D827FB21DC00E4C6E8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D727FB21DC00E4C6E8 /* FirebaseCrashlytics */; };
 		B85A77DA27FB21DC00E4C6E8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77D927FB21DC00E4C6E8 /* FirebaseDatabase */; };
 		B85A77DD27FB220600E4C6E8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B85A77DC27FB220600E4C6E8 /* GoogleSignIn */; };
+		D085D815282E67E400FB2260 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085D814282E67E400FB2260 /* AppleSignInButton.swift */; };
+		D085D818282E698100FB2260 /* AppleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085D817282E698100FB2260 /* AppleAuthService.swift */; };
 		OBJ_46 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* GoogleSignInButton.swift */; };
 		OBJ_47 /* AuthSDKImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* AuthSDKImpl.swift */; };
 		OBJ_48 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AuthProvider.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D085D814282E67E400FB2260 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
+		D085D817282E698100FB2260 /* AppleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthService.swift; sourceTree = "<group>"; };
 		OBJ_13 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		OBJ_15 /* AuthSDKImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKImpl.swift; sourceTree = "<group>"; };
 		OBJ_21 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
@@ -99,6 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D085D813282E67CC00FB2260 /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				D085D814282E67E400FB2260 /* AppleSignInButton.swift */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
+		D085D816282E696800FB2260 /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				D085D817282E698100FB2260 /* AppleAuthService.swift */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +131,7 @@
 		OBJ_11 /* definitions */ = {
 			isa = PBXGroup;
 			children = (
+				D085D813282E67CC00FB2260 /* apple */,
 				OBJ_12 /* google */,
 			);
 			path = definitions;
@@ -187,6 +208,7 @@
 		OBJ_25 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				D085D816282E696800FB2260 /* apple */,
 				OBJ_26 /* google */,
 			);
 			path = service;
@@ -374,9 +396,11 @@
 				OBJ_47 /* AuthSDKImpl.swift in Sources */,
 				OBJ_48 /* AuthProvider.swift in Sources */,
 				OBJ_49 /* AuthState.swift in Sources */,
+				D085D815282E67E400FB2260 /* AppleSignInButton.swift in Sources */,
 				OBJ_50 /* User.swift in Sources */,
 				OBJ_51 /* GoogleAuthService.swift in Sources */,
 				OBJ_52 /* AuthSDKError.swift in Sources */,
+				D085D818282E698100FB2260 /* AppleAuthService.swift in Sources */,
 				OBJ_53 /* AuthSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,12 +17,13 @@ public final class AuthSDKImpl: AuthSDK {
     // MARK: - Stored Properties
     
     private let googleAuthService: GoogleAuthService
-    
+    private let appleAuthService: AppleAuthService
     
     // MARK: - Initialization
     
     private init() {
         googleAuthService = GoogleAuthServiceImpl()
+        appleAuthService = AppleAuthServiceImpl()
     }
     
     
@@ -45,6 +46,8 @@ extension AuthSDKImpl {
         switch provider {
         case .google:
             return googleAuthService.showGoogleSignInView()
+        case .apple:
+            return appleAuthService.requestSignInFlow()
         }
     }
     
@@ -55,6 +58,8 @@ extension AuthSDKImpl {
         switch provider {
         case .google:
             return googleAuthService.signOut()
+        case .apple:
+            return appleAuthService.signOut()
         }
     }
     
@@ -65,6 +70,8 @@ extension AuthSDKImpl {
         switch provider {
         case .google:
             return googleAuthService.restoreSignInState()
+        default:
+            break /// FIXME
         }
     }
     
